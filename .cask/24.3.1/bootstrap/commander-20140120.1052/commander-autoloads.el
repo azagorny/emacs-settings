@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("commander-pkg.el" "commander.el") (21601
-;;;;;;  63874 621268 663000))
+;;;### (autoloads nil nil ("commander-pkg.el" "commander.el") (21603
+;;;;;;  2439 167872 850000))
 
 ;;;***
 

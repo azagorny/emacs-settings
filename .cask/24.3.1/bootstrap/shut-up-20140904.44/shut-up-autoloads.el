@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (shut-up-silence-emacs shut-up) "shut-up" "shut-up.el"
-;;;;;;  (21601 63875 842607 56000))
+;;;;;;  (21603 2440 421349 117000))
 ;;; Generated autoloads from shut-up.el
 
 (autoload 'shut-up "shut-up" "\
@@ -40,8 +40,7 @@ call this function in `noninteractive' sessions.
 
 ;;;***
 
-;;;### (autoloads nil nil ("shut-up-pkg.el") (21601 63875 911432
-;;;;;;  17000))
+;;;### (autoloads nil nil ("shut-up-pkg.el") (21603 2440 490967 554000))
 
 ;;;***
 

@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("s-pkg.el" "s.el") (21601 63872 942382
-;;;;;;  674000))
+;;;### (autoloads nil nil ("s-pkg.el" "s.el") (21603 2437 420844
+;;;;;;  78000))
 
 ;;;***
 

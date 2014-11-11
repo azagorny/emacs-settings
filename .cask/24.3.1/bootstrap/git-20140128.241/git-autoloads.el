@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("git-pkg.el" "git.el") (21601 63875 65946
-;;;;;;  347000))
+;;;### (autoloads nil nil ("git-pkg.el" "git.el") (21603 2439 611187
+;;;;;;  878000))
 
 ;;;***
 

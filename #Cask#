@@ -1,0 +1,8 @@
+(source "melpa" "http://melpa.milkbox.net/packages/")
+(source gnu)
+(source marmalade)
+
+(depends-on "monokai-theme")
+(depends-on "pallet")
+(depends-on "evil")
+(depends-on "jedi")

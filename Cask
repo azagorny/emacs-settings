@@ -1,0 +1,13 @@
+(source "melpa" "http://melpa.milkbox.net/packages/")
+(source gnu)
+(source marmalade)
+
+(depends-on "monokai-theme")
+(depends-on "auto-complete")
+(depends-on "pallet")
+(depends-on "evil")
+(depends-on "jedi")
+(depends-on "zenburn-theme")
+(depends-on "powerline")
+(depends-on "neotree")
+(depends-on "flycheck")

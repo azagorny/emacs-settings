@@ -1,34 +1,33 @@
-(add-to-list 'load-path "~/.emacs.d/")
-(load "package")
-(require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+(require 'pallet)
+(pallet-mode t)
 
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
-(unless (require 'el-get nil 'noerror)
-    (with-current-buffer
-            (url-retrieve-synchronously
-                     "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
-                (goto-char (point-max))
-                    (eval-print-last-sexp)))
-
-(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
-(el-get 'sync)
-
-(add-to-list 'load-path "~/.emacs.d/evil" )
-(add-to-list 'load-path "~/.emacs.d/emacs-powerline" )
-(add-to-list 'load-path "~/.emacs.d/color-themes")
-(require 'powerline)
-(require 'evil)
-(require 'color-theme)
 (require 'ido)
-(require 'highlight-chars)
-(evil-mode 1)
 (ido-mode t)
-(color-theme-initialize)
-(color-theme-almost-monokai)
+
+(defun py-jedi-mode-keys ()
+      (local-set-key (kbd "C-c g") 'jedi:goto-definition)
+)
+
+(load-theme 'zenburn t)
+(add-hook 'python-mode-hook 'linum-mode)
+
+(evil-mode 1)
+
+(powerline-default-theme)
+
 (add-hook 'python-mode-hook 'auto-complete-mode)
 (add-hook 'python-mode-hook 'jedi:ac-setup)
-(iswitchb-mode 1)
+(add-hook 'python-mode-hook 'show-paren-mode)
+(add-hook 'python-mode-hook 'py-jedi-mode-keys)
+
+(global-set-key [f8] 'neotree-toggle)
+(add-hook 'neotree-mode-hook
+          (lambda ()
+            (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+            (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
+
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
