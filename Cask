@@ -11,3 +11,4 @@
 (depends-on "powerline")
 (depends-on "neotree")
 (depends-on "flycheck")
+(depends-on "yaml-mode")
