@@ -31,3 +31,6 @@
             (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
+(windmove-default-keybindings) 
+(prefer-coding-system 'utf-8)
+(add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))

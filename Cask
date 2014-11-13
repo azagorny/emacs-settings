@@ -12,3 +12,5 @@
 (depends-on "neotree")
 (depends-on "flycheck")
 (depends-on "yaml-mode")
+(depends-on "magit")
+(depends-on "column-marker")
