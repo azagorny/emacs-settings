@@ -34,3 +34,20 @@
 (windmove-default-keybindings) 
 (prefer-coding-system 'utf-8)
 (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("b7d8113de2f7d9a3cf42335d8eed8415b5a417e7f6382e59076f9f4ae4fa4cee" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(setq backup-directory-alist `(("." . "~/.saves")))
+
+;; плавный скролл
+(setq scroll-conservatively 50)
+(setq scroll-margin 4)

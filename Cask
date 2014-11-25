@@ -14,3 +14,5 @@
 (depends-on "yaml-mode")
 (depends-on "magit")
 (depends-on "column-marker")
+(depends-on "ag")
+(depends-on "jinja2-mode")
