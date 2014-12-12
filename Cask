@@ -16,3 +16,4 @@
 (depends-on "column-marker")
 (depends-on "ag")
 (depends-on "jinja2-mode")
+(depends-on "js2-mode")

@@ -5,3 +5,4 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 (load "00base-setup.el")
 (load "01python.el")
+(load "02javascript.el")

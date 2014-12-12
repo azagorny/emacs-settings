@@ -10,4 +10,3 @@
 (add-hook 'python-mode-hook 'py-jedi-mode-keys)
 
 (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-1 80)))
-
